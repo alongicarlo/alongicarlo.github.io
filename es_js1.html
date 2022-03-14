@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+        function funzioneProdotto(){
+            var numero1=document.forms["due_numeri"]["n1"].value;
+            var numero2=document.forms["due_numeri"]["n2"].value;
+            risultato=numero1*numero2;
+            window.alert("Risultato:"+risultato);
+        }    
+        </script>
+        <style>
+            form{
+                border-style: solid;
+                border-color: red;
+                background-color: red;
+            }
+            body{
+                background-color: rgb(0, 174, 255);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Inserire Dati</h1>
+        <form name="due_numeri">
+        inserire primo numero<br> <input type ="text" name="n1"> 
+        inserire secondo numero<br> <input type ="text" name="n2">
+        <input type="button" value ="calcola" onclick="funzioneProdotto()">
+
+        </form>
+</html>
