@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function test(){
+                var numero=document.getElementById('num').value;
+
+                var image = document.getElementById('immagine')
+                if(numero>18){
+
+                    image.src="luna.jpg"
+                }
+                else{
+                    image.src="sole.jpg"
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+
+            <input id="num" type="text" name="nome" size="30" maxlength="50">
+            <button onclick="test()">Clicca</button>
+            
+        <div>
+            <img id="immagine">
+        </div>
+        
+        
+
+    </body>
+</html>
